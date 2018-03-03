@@ -89,7 +89,7 @@
       </div>
       <div class="row">
         <!--<div ng-repeat="word in words track by $index" class="col word" id="word{{$index}}" ng-class="getClass({{$index}})" ng-click="select($index)">{{word}}{{$index}}</div>-->
-        <div ng-repeat="word in words track by $index" class="col word" id="word{{$index}}" ng-class="((selected.indexOf($index)!=-1 && spymaster) ? 'bg-success' : ((selected.indexOf($index)!=-1 || spymaster) ? spy[$index] : '')+' '+((selected.indexOf($index)!=-1 || spymaster) ? 'active' : ''))" ng-click="select($index)">{{word}}{{$index}}</div>
+        <div ng-repeat="word in words track by $index" class="col word" id="word{{$index}}" ng-class="((selected.indexOf($index)!=-1 && spymaster) ? 'bg-success' : ((selected.indexOf($index)!=-1 || spymaster) ? spy[$index] : '')+' '+((selected.indexOf($index)!=-1 || spymaster) ? 'active' : ''))" ng-click="select($index)">{{word}}</div>
       </div>
       <!--<div class="row">
         <div class="col word col-xs-4">Pescitarian</div>
