@@ -172,7 +172,7 @@
           <div class="modal-header" >
           </div>
           <div class="modal-body">
-            <h1 ><input type="number" class="form-control mb-2 mr-sm-2 roomform bg-primary active" id="roominput" ng-model="roomform" placeholder="{{room}}" onClick="this.select();"></h1>
+            <h1 ><input type="number" pattern="\d*" class="form-control mb-2 mr-sm-2 roomform bg-primary active" id="roominput" ng-model="roomform" placeholder="{{room}}" onClick="this.select();"></h1>
           </div>
           <div class="modal-footer">
             <button class="btn btn-lg btn-primary active" style="margin:0 auto;" data-dismiss="modal" type="submit" ng-click="joinroom()">Join Room</button>
