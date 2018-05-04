@@ -4090,17 +4090,22 @@ a.bg-secondary:focus, a.bg-secondary:hover {
   background-color: #c28cbb !important; }
 
 .bg-success {
-  background: #1D976C;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1D976C !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93F9B9, #1D976C)!important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93F9B9, #1D976C)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border:none !important;
+    pointer-events: none;
  }
 
 a.bg-success:focus, a.bg-success:hover {
   background-color: #5bd873 !important; }
 
 .bg-info {
-  background-color: #C1CAD6 !important; }
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: slategrey !important;
+pointer-events: none;}
 
 a.bg-info:focus, a.bg-info:hover {
   background-color: #a2b0c2 !important; }
@@ -4124,26 +4129,29 @@ a.bg-light:focus, a.bg-light:hover {
   background-color: #c1c8cd !important; }
 
 .bg-dark {
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    pointer-events: none;
  }
 
 a.bg-dark:focus, a.bg-dark:hover {
   background-color: #232526 !important; }
 
 .bg-teama {
-  background: #fd746c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   }
+  background: #fd746c!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9068, #fd746c)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  pointer-events: none;}
 
 a.bg-teama:focus, a.bg-teama:hover {
   background-color: #fd746c !important; }
 
 .bg-teamb {
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  }
+  background: #83a4d4!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  pointer-events: none;  }
 
 a.bg-teamb:focus, a.bg-teamb:hover {
   background-color: #83a4d4 !important; }
@@ -4155,9 +4163,10 @@ a.bg-revealed:focus, a.bg-revealed:hover {
   background-color: #53c068 !important; }
 
 .bg-neutral {
-  background: #ffe259;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: #ffe259!important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259)!important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  pointer-events: none;  }
 
 a.bg-neutral:focus, a.bg-neutral:hover {
   background-color: #f3ad22 !important; }

@@ -140,10 +140,10 @@
           </div>
           <div class="modal-body">
             <p>Are you sure you want to select this card?</p>
-            <div class="col word" style="margin:0 auto;">{{words[last]}}</div>
+            <div class="col word bg-info" style="margin:0 auto;">{{words[last]}}</div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-lg btn-primary" style="margin:0 auto;" data-dismiss="modal" ng-click="select(last)">Dead sure!</button>
+            <button type="button" class="btn btn-lg btn-primary active" style="margin:0 auto;" data-dismiss="modal" ng-click="select(words[last])">Dead sure!</button>
           </div>
         </div>
       </div>
@@ -161,7 +161,7 @@
             <p>Are you sure you want to be a spymaster? (Only be 2 per game)</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-lg btn-primary" style="margin:0 auto;" data-dismiss="modal" ng-click="spymaster=true">Dead sure!</button>
+            <button type="button" class="btn btn-lg btn-primary active" style="margin:0 auto;" data-dismiss="modal" ng-click="spymaster=true">Dead sure!</button>
           </div>
         </div>
       </div>
@@ -175,7 +175,7 @@
             <h1 ><input type="text" class="form-control mb-2 mr-sm-2 roomform bg-primary active" id="roominput" ng-model="roomform" placeholder="{{room}}" onClick="this.select();"></h1>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-lg btn-primary" style="margin:0 auto;" data-dismiss="modal" type="submit" ng-click="joinroom()">Join Room</button>
+            <button class="btn btn-lg btn-primary active" style="margin:0 auto;" data-dismiss="modal" type="submit" ng-click="joinroom()">Join Room</button>
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@
             <h1 class="display-1 active">{{set}}</h1>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-lg btn-primary" style="margin:0 auto;" data-dismiss="modal" type="submit" ng-click="changeset()">Dead sure!</button>
+            <button class="btn btn-lg btn-primary active" style="margin:0 auto;" data-dismiss="modal" type="submit" ng-click="changeset()">Dead sure!</button>
           </div>
         </div>
       </div>

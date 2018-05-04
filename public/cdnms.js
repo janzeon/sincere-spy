@@ -71,7 +71,7 @@ app.controller('cdnms', function($scope, socket, $http) {
     $scope.select = function(word){
         if ($scope.selected.indexOf(word)==-1) {
             if ($scope.confirm && $scope.last==-1){
-                $scope.last=word
+                $scope.last=$scope.words.indexOf(word)
                 $("#confirm-modal").modal('show')
             }
             else {
