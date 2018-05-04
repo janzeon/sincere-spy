@@ -39,13 +39,13 @@
   </style>
 </head>
 
-<body ng-controller="cdnms">
+<body ng-controller="cdnms" ng-class="(spymaster) ? 'spymaster' : 'players'">
   <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">Codenames</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent"> 
-        <button class="btn navbar-btn ml-2 text-white btn-primary px-3" data-toggle="modal" data-target="#room-modal">{{room}}</button>
+        <button class="btn navbar-btn ml-2 btn-primary px-3" data-toggle="modal" data-target="#room-modal">{{room}}</button>
         <select class="selectpicker" data-live-search="true" data-width="100px" data-style="btn-primary" ng-model="set">
           <option value="original">Original</option>
           <option value="twoK">2K Nouns</option>
@@ -59,8 +59,8 @@
           <option value="240">4:00</option>
           <option value="300">5:00</option>
         </select>
-        <button class="btn navbar-btn ml-2 text-white btn-primary px-3" ng-click="confirm=!confirm" ng-class='{"active": confirm}'>Confirm</button>
-        <button class="btn navbar-btn ml-2 text-white btn-primary" href="#" ng-click="reset()">Reset</button>
+        <button class="btn navbar-btn ml-2 btn-primary px-3" ng-click="confirm=!confirm" ng-class='{"active": confirm}'>Confirm</button>
+        <button class="btn navbar-btn ml-2 btn-primary" href="#" ng-click="reset()">Reset</button>
         <button class="btn navbar-btn ml-2 text-white btn-secondary" ng-hide='spymaster' data-toggle="modal" data-target="#spymaster-modal"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Spymaster</button>
         <button class="btn navbar-btn ml-2 text-white btn-secondary" ng-show='spymaster' ng-click="group()">Group</button>
       </div>
@@ -89,7 +89,7 @@
       </div>
       <div class="row">
         <!--<div ng-repeat="word in words track by $index" class="col word" id="word{{$index}}" ng-class="getClass({{$index}})" ng-click="select($index)">{{word}}{{$index}}</div>-->
-        <div ng-repeat="word in words track by $index" class="col word" id="word{{$index}}" ng-class="((selected.indexOf($index)!=-1 && spymaster) ? 'bg-success' : ((selected.indexOf($index)!=-1 || spymaster) ? spy[$index] : '')+' '+((selected.indexOf($index)!=-1 || spymaster) ? 'active' : ''))" ng-click="select($index)">{{word}}</div>
+        <div ng-repeat="word in words track by $index" class="col word" id="word{{$index}}" ng-class="((selected.indexOf(word)!=-1 && spymaster) ? 'bg-success' : ((selected.indexOf(word)!=-1 || spymaster) ? spy[$index] : '')+' '+((selected.indexOf(word)!=-1 || spymaster) ? 'active' : ''))" ng-click="select(word)">{{word}}</div>
       </div>
       <!--<div class="row">
         <div class="col word col-xs-4">Pescitarian</div>

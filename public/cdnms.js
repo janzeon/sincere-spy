@@ -68,21 +68,21 @@ app.controller('cdnms', function($scope, socket, $http) {
     
     getwords($scope.n,$scope.set,$scope.room)
     
-    $scope.select = function(index){
-        if ($scope.selected.indexOf(index)==-1) {
+    $scope.select = function(word){
+        if ($scope.selected.indexOf(word)==-1) {
             if ($scope.confirm && $scope.last==-1){
-                $scope.last=index
+                $scope.last=word
                 $("#confirm-modal").modal('show')
             }
             else {
-                //$(('#word'+String(index))).addClass(getClass(index))
-                //$(('#word'+String(index))).addClass('active')
-                $scope.selected.push(index)
-                if($scope.teama.indexOf(index)!=-1){
-                   $scope.teama.splice($scope.teama.indexOf(index),1)
+                //$(('#word'+String(word))).addClass(getClass(word))
+                //$(('#word'+String(word))).addClass('active')
+                $scope.selected.push(word)
+                if($scope.teama.indexOf(word)!=-1){
+                   $scope.teama.splice($scope.teama.indexOf(word),1)
                 }
-                if($scope.teamb.indexOf(index)!=-1){
-                   $scope.teamb.splice($scope.teamb.indexOf(index),1)
+                if($scope.teamb.indexOf(word)!=-1){
+                   $scope.teamb.splice($scope.teamb.indexOf(word),1)
                 }
                 socket.emit("select",{"selected":$scope.selected,"teama":$scope.teama,"teamb":$scope.teamb,"room":$scope.room})
             }
@@ -112,6 +112,7 @@ app.controller('cdnms', function($scope, socket, $http) {
             $scope.spy[i] = v.value1;
             $scope.words[i] = v.value2;
         });
+        console.log($scope.selected)
     }
     
     socket.on('again', function(room) {

@@ -449,31 +449,31 @@ fieldset[disabled] a.btn {
   pointer-events: none; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #856084;
-  border-color: #856084; }
+  color: #243b55;
+  background-color: transparent;}
   .btn-primary:hover {
-    color: #fff;
-    background-color: #6f506e;
-    border-color: #674b67; }
+    color: #e9e4f0; }
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 3px rgba(133, 96, 132, 0.5); }
+     }
   .btn-primary.disabled, .btn-primary:disabled {
-    background-color: #856084;
-    border-color: #856084; }
+    background-color: #243b55;
+    border-color: #243b55; }
   .btn-primary:active, .btn-primary.active,
   .show > .btn-primary.dropdown-toggle {
-    background-color: #6f506e;
-    background-image: none;
-    border-color: #674b67; }
+    background-color: #243b55;
+      color:#243b55
+    background-image: none; }
 
 .btn-secondary {
   color: #111;
-  background-color: #D4ADCF;
-  border-color: #D4ADCF; }
+  background: #42275a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:none;
+ }
   .btn-secondary:hover {
     color: #111;
-    background-color: #c794c0;
+    background-color: #c33764;
     border-color: #c28cbb; }
   .btn-secondary:focus, .btn-secondary.focus {
     box-shadow: 0 0 0 3px rgba(212, 173, 207, 0.5); }
@@ -3394,7 +3394,23 @@ body {
   line-height: 1.5;
   color: #292b2c;
   text-align: left;
-  background-color: white; }
+   }
+
+.players {
+    background: #606c88;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.spymaster {
+    background: #114357;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F29492, #114357);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F29492, #114357);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -4061,10 +4077,11 @@ mark,
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #856084 !important; }
+  background-color: transparent !important; }
 
 a.bg-primary:focus, a.bg-primary:hover {
-  background-color: #674b67 !important; }
+  color: #fff !important; 
+}
 
 .bg-secondary {
   background-color: #D4ADCF !important; }
@@ -4073,7 +4090,11 @@ a.bg-secondary:focus, a.bg-secondary:hover {
   background-color: #c28cbb !important; }
 
 .bg-success {
-  background-color: #84E296 !important; }
+  background: #1D976C;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:none !important;
+ }
 
 a.bg-success:focus, a.bg-success:hover {
   background-color: #5bd873 !important; }
@@ -4103,22 +4124,29 @@ a.bg-light:focus, a.bg-light:hover {
   background-color: #c1c8cd !important; }
 
 .bg-dark {
-  background-color: #5E5D5C !important; }
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 
 a.bg-dark:focus, a.bg-dark:hover {
-  background-color: #444443 !important; }
+  background-color: #232526 !important; }
 
 .bg-teama {
-  background-color: #F78972 !important; }
+  background: #fd746c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   }
 
 a.bg-teama:focus, a.bg-teama:hover {
-  background-color: #f46142 !important; }
+  background-color: #fd746c !important; }
 
 .bg-teamb {
-  background-color: #7394B3 !important; }
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  }
 
 a.bg-teamb:focus, a.bg-teamb:hover {
-  background-color: #567b9e !important; }
+  background-color: #83a4d4 !important; }
 
 .bg-revealed {
   background-color: #78CE89 !important; }
@@ -4127,7 +4155,9 @@ a.bg-revealed:focus, a.bg-revealed:hover {
   background-color: #53c068 !important; }
 
 .bg-neutral {
-  background-color: #F6BF52 !important; }
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 a.bg-neutral:focus, a.bg-neutral:hover {
   background-color: #f3ad22 !important; }
@@ -6014,18 +6044,22 @@ body > * {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid grey;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #e9e4f0;
+  /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);*/
   padding: 20px;
   cursor: pointer;
   font-family: 'Roboto Slab', serif;
-
+  color:#e9e4f0;
   height: 10vh; }
 
 .word:hover {
   box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  background-color: #F9F9F9; }
+  color:#414345;
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 
 .active {
   color: white;
